@@ -78,10 +78,19 @@ where marks > 50
 group by name, city, marks
 order by marks desc;
 
+#WHERE ==> This thing implies on the rows
+#HAVING ==> This things implies on the colums
 
+select name, city, grade, marks
+from international_school
+where grade = "A+" #First Condition
+having marks > 95; #Second Condition
+
+
+#How to use where: 
 select * 
-from international_school;
-
-
-
+from international_school
+where grade = "A"
+order by RollNumber desc;
+ 
 

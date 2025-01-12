@@ -1,6 +1,5 @@
 #Checking how primary and foreign keys work when using them in the same table
-
-
+use pf_keys;
 create table if not exists student_info(
 	student_id int primary key,
     student_name varchar(50) not null,
